@@ -18,7 +18,7 @@ MonoBehaviour:
     m_Value: 0
   threshold:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 3
   intensity:
     m_OverrideState: 1
     m_Value: 0.25
@@ -63,6 +63,7 @@ MonoBehaviour:
   intensity:
     m_OverrideState: 1
     m_Value: 1
+<<<<<<< HEAD
 --- !u!114 &-5126781992117813455
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -82,6 +83,8 @@ MonoBehaviour:
   cropToFit:
     m_OverrideState: 1
     m_Value: 0
+=======
+>>>>>>> origin/main
 --- !u!114 &-3357603926938260329
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -124,6 +127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   intensity:
+<<<<<<< HEAD
     m_OverrideState: 1
     m_Value: 0.2
   xMultiplier:
@@ -160,6 +164,22 @@ MonoBehaviour:
   balance:
     m_OverrideState: 0
     m_Value: -31
+=======
+    m_OverrideState: 0
+    m_Value: 0
+  xMultiplier:
+    m_OverrideState: 0
+    m_Value: 1
+  yMultiplier:
+    m_OverrideState: 0
+    m_Value: 1
+  center:
+    m_OverrideState: 0
+    m_Value: {x: 0.5, y: 0.5}
+  scale:
+    m_OverrideState: 0
+    m_Value: 1
+>>>>>>> origin/main
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,6 +199,7 @@ MonoBehaviour:
   - {fileID: -3357603926938260329}
   - {fileID: -5424890479570736875}
   - {fileID: -1439068483864962155}
+<<<<<<< HEAD
   - {fileID: 5385021598707539944}
   - {fileID: 5497348902126249096}
   - {fileID: 2135519403108415761}
@@ -225,6 +246,8 @@ MonoBehaviour:
   blueOutBlueIn:
     m_OverrideState: 1
     m_Value: 200
+=======
+>>>>>>> origin/main
 --- !u!114 &849379129802519247
 MonoBehaviour:
   m_ObjectHideFlags: 3
