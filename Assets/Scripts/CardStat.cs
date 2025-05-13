@@ -12,4 +12,8 @@ public class CardStat : MonoBehaviour
             _cardDataSO.SayHello();
         }
     }
+    public int Worth()
+    {
+        return _cardDataSO.CardPoints;
+    }
 }

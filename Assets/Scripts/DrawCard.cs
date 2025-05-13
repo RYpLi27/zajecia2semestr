@@ -1,23 +1,24 @@
-using NUnit.Framework;
 using UnityEngine;
 using System.Collections.Generic;
-using System.Diagnostics;
 
 public class DrawCard : MonoBehaviour
 {
     [SerializeField] private List<CardStat> cards;
+    [SerializeField] private List<CardStat> DeckOfCards;
 
     private CardStat DrawnCard;
+    private CardStat playerCard, enemyCard;
 
-    [SerializeField] private List<CardStat> DeckOfCards;
     private void Update()
     {
         if (Input.GetButtonDown("Jump"))
         {
-            DrawMethod();
+            DrawMethod(true);
+            DrawMethod(false);
+            CountPoints();
         }
     }
-       private void DrawMethod()
+    private void DrawMethod(bool isPlayer)
     {
         if (cards.Count == 0)
         {
@@ -28,36 +29,30 @@ public class DrawCard : MonoBehaviour
         var DrawnCard = cards[randomIndex];
         cards.RemoveAt(randomIndex);
         DrawnCard.CardInfo();
+
+        if (isPlayer == true)
+        {
+            playerCard = DrawnCard;
+        } else
+        {
+            enemyCard = DrawnCard;
+        }
+
+
     }
-    //public CardStat cardList;
-    //private List<Transform> remainingCards = new List<Transform>();
-
-    //void Start()
-    //{
-    //    foreach (GameObject prefab in cardList.cards)
-    //    {
-    //        GameObject instance = GameObject.Find(prefab.name);
-    //        if (instance != null)
-    //            remainingCards.Add(instance.transform);
-    //        else
-    //            Debug.LogWarning("Nie znaleziono obiektu w scenie: " + prefab.name);
-    //    }
-    //}
-
-    //void Update()
-    //{
-    //    if (!Input.GetKeyDown(KeyCode.Space)) return;
-
-    //    int index = Random.Range(0, remainingCards.Count);
-    //    Transform selected = remainingCards[index];
-    //    selected.position += Vector3.up * lift;
-    //    remainingCards.RemoveAt(index);
-    //}
-    //switch(DrawnCard)
-    //{
-    //    case Skrypt1:
-    //        DrawnCard = null;
-    //        break;
-
-    //}
+    private void CountPoints()
+    {
+        switch (playerCard.Worth() - enemyCard.Worth())
+        {
+            case < 0:
+                Debug.Log("wygrywa Przeciwnik");
+                return;
+            case > 0:
+                Debug.Log("Wygrywasz");
+                return;
+            case 0:
+                Debug.Log("remis");
+                return;
+        }
+    } 
 }
