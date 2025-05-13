@@ -3,8 +3,8 @@ using UnityEngine;
 public class CardStat : MonoBehaviour
 {
     [SerializeField] private CardDataSO _cardDataSO;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public void CardInvoke()
+    
+    public void CardInfo()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
