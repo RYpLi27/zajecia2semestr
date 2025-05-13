@@ -669,7 +669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc913fd04b5a67d4fbac5088732e4e36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cardDataSO: {fileID: 0}
+  _cardDataSO: {fileID: 11400000, guid: 5364a2f86aee38e479c95985d637de81, type: 2}
 --- !u!1 &1195511152
 GameObject:
   m_ObjectHideFlags: 0
@@ -900,7 +900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc913fd04b5a67d4fbac5088732e4e36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cardDataSO: {fileID: 0}
+  _cardDataSO: {fileID: 11400000, guid: 5364a2f86aee38e479c95985d637de81, type: 2}
 --- !u!1 &1394507033
 GameObject:
   m_ObjectHideFlags: 0
@@ -1023,7 +1023,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc913fd04b5a67d4fbac5088732e4e36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cardDataSO: {fileID: 0}
+  _cardDataSO: {fileID: 11400000, guid: 5364a2f86aee38e479c95985d637de81, type: 2}
 --- !u!1 &1404904625
 GameObject:
   m_ObjectHideFlags: 0
@@ -1166,7 +1166,6 @@ MonoBehaviour:
   - {fileID: 1359023452}
   DeckOfCards:
   - {fileID: 0}
-  allCards: []
 --- !u!1 &1443035053
 GameObject:
   m_ObjectHideFlags: 0
@@ -1289,7 +1288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc913fd04b5a67d4fbac5088732e4e36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cardDataSO: {fileID: 0}
+  _cardDataSO: {fileID: 11400000, guid: 5364a2f86aee38e479c95985d637de81, type: 2}
 --- !u!1 &1640403895
 GameObject:
   m_ObjectHideFlags: 0

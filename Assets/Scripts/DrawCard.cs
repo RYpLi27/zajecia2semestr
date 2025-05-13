@@ -14,11 +14,20 @@ public class DrawCard : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump"))
         {
-            //DrawnCard = cards[Random.Range(0, cards.Count)];
-            int randomIndex = Random.Range(0, cards.Count);
-            var DrawnCard = cards[randomIndex];
-            DrawnCard.CardInfo();
+            DrawMethod();
         }
+    }
+       private void DrawMethod()
+    {
+        if (cards.Count == 0)
+        {
+            return;
+        }
+        //DrawnCard = cards[Random.Range(0, cards.Count)];
+        int randomIndex = Random.Range(0, cards.Count);
+        var DrawnCard = cards[randomIndex];
+        cards.RemoveAt(randomIndex);
+        DrawnCard.CardInfo();
     }
     //public CardStat cardList;
     //private List<Transform> remainingCards = new List<Transform>();

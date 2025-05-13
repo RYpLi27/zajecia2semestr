@@ -8,7 +8,7 @@ public class CardStat : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            _cardDataSO.hP *= 2;
+            //_cardDataSO.hP *= 2;
             _cardDataSO.SayHello();
         }
     }
