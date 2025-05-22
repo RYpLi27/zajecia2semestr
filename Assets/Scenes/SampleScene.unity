@@ -915,7 +915,7 @@ GameObject:
   - component: {fileID: 1394507034}
   - component: {fileID: 1394507038}
   m_Layer: 0
-  m_Name: Card_
+  m_Name: Card_Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1023,7 +1023,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc913fd04b5a67d4fbac5088732e4e36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cardDataSO: {fileID: 11400000, guid: 57efa871338bb094f9ca60969cb3fd1b, type: 2}
+  _cardDataSO: {fileID: 11400000, guid: eb3107465689b444abbd084d0d561fcb, type: 2}
 --- !u!1 &1404904625
 GameObject:
   m_ObjectHideFlags: 0
@@ -1162,10 +1162,9 @@ MonoBehaviour:
   cards:
   - {fileID: 1394507038}
   - {fileID: 1443035058}
-  - {fileID: 1165844928}
-  - {fileID: 1359023452}
   DeckOfCards:
-  - {fileID: 0}
+  - {fileID: 1394507038}
+  - {fileID: 1443035058}
 --- !u!1 &1443035053
 GameObject:
   m_ObjectHideFlags: 0
@@ -1180,7 +1179,7 @@ GameObject:
   - component: {fileID: 1443035054}
   - component: {fileID: 1443035058}
   m_Layer: 0
-  m_Name: Card_2
+  m_Name: Card_Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
